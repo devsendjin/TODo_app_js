@@ -1,0 +1,80 @@
+#form {
+    width: 450px;
+    margin: 0 auto;
+
+}
+
+#form p {
+    color: #ff0000;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.buttons {
+    width: 300px;
+    margin-left: 35px;
+}
+#form textarea {
+    width: 300px;
+    border:1px solid black;
+    display: inline-block;
+}
+
+#form input {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 480px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.done-bg {
+    background: #AED581 !important;
+}
+
+.removed-bg {
+    background: #d5d127 !important;
+}
+
+.error-msg {
+    text-align: center;
+    font-size: 24px;
+    color: #ff0000;
+}
+
+.list-note {
+    padding:20px;
+    margin: 20px;
+    width: 200px;
+    flex-basis: 200px;
+    border-radius: 10px;
+    border: 1px solid black;
+    min-height: 100px;
+    background: #E0E0E0;
+    position: relative;
+    transition: .6s;
+}
+
+.list-note #remove {
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    padding: 20px;
+    cursor: pointer;
+}
+.list-note .done {
+    color: #43A047;
+    font-weight: bold;
+    position: absolute;
+    right:0;
+    top: 0;
+    padding: 20px;
+    cursor: pointer;
+}
