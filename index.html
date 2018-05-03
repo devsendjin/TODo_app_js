@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>ToDo List</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    </head>
+    <body>
+
+        <h1 class="text-center">ToDo Application</h1>
+        <div id="form">
+            <form name="main">
+                <textarea class="form-control" name="description" autofocus></textarea>
+
+                <input type="button" class="btn btn-primary" value="Add new" id="addBtn" />
+                <div class="requests">
+                    <input type="button" class="btn btn-info" value="Send(with AJAX)" id="sendBtn" />
+                    <input type="button" class="btn btn-info" value="Send(with Websockets)" id="websocket" />
+                </div>
+
+            </form>
+            <div class="buttons">
+                <input type="button" value="All" id="all-filter" class="btn btn-success">
+                <input type="button" value="ToDo" id="todos-filter" class="btn btn-success">
+                <input type="button" value="Done" id="done-filter" class="btn btn-success">
+                <input type="button" value="Trash" id="trash-filter" class="btn btn-success">
+            </div>
+        </div>
+        <div id="list"></div>
+
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="js/TodoItem.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
